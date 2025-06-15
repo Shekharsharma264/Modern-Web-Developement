@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water & Electricity Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+            color: white;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: black;
+            transition: 0.3s;
+            position: relative;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        input, button {
+            margin: 12px 0;
+            padding: 14px;
+            width: 90%;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input {
+            border: 2px solid #ff416c;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        button {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+        }
+        canvas {
+            margin-top: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .history {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Water & Electricity Usage Tracker</h2>
+    <div class="container">
+        <label>Set Daily Water Limit (Liters):</label>
+        <input type="number" id="waterLimit" placeholder="Enter limit" />
+        <label>Enter Today's Water Usage (Liters):</label>
+        <input type="number" id="waterUsage" placeholder="Enter usage" />
+        <label>Set Daily Electricity Limit (kWh):</label>
+        <input type="number" id="electricityLimit" placeholder="Enter limit" />
+        <label>Enter Today's Electricity Usage (kWh):</label>
+        <input type="number" id="electricityUsage" placeholder="Enter usage" />
+        <button onclick="trackUsage()">Save</button>
+        <canvas id="usageChart"></canvas>
+        <div class="history" id="historyLog"></div>
+    </div>
+
+    <script>
+        async function trackUsage() {
+            let data = {
+                waterLimit: parseInt(document.getElementById('waterLimit').value) || 0,
+                waterUsage: parseInt(document.getElementById('waterUsage').value) || 0,
+                electricityLimit: parseInt(document.getElementById('electricityLimit').value) || 0,
+                electricityUsage: parseInt(document.getElementById('electricityUsage').value) || 0
+            };
+            
+            await fetch('/api/usage', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            loadHistory();
+        }
+
+        async function loadHistory() {
+            let response = await fetch('/api/usage');
+            let historyData = await response.json();
+            let historyHTML = historyData.map(entry => `<p>Water: ${entry.waterUsage}/${entry.waterLimit}L, Electricity: ${entry.electricityUsage}/${entry.electricityLimit}kWh</p>`).join('');
+            document.getElementById('historyLog').innerHTML = historyHTML;
+        }
+        
+        document.addEventListener("DOMContentLoaded", loadHistory);
+    </script>
+</body>
+</html>

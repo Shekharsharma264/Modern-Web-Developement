@@ -1,0 +1,101 @@
+Student_ID,School,Area,Gender,Caste,Age,Standard,Dropout_Status,Reason
+1,St. Xavier’s,Metro City,Male,General,8,7,Yes,Lack of Interest
+2,Delhi Public School,Tribal Area,Male,SC,10,9,No,NA
+3,St. Xavier’s,Small Town,Female,SC,14,7,No,NA
+4,Delhi Public School,Tier-2 City,Male,EWS,12,8,Yes,Other
+5,DAV Public School,Tier-1 City,Male,ST,14,7,Yes,Health Problems
+6,Jawahar Navodaya Vidyalaya,Tribal Area,Male,ST,9,6,No,NA
+7,St. Xavier’s,Tier-2 City,Male,ST,17,7,Yes,Early Marriage
+8,St. Xavier’s,Tier-2 City,Female,OBC,10,4,No,NA
+9,Jawahar Navodaya Vidyalaya,Metro City,Female,ST,6,3,Yes,Early Marriage
+10,DAV Public School,Tribal Area,Female,ST,11,9,No,NA
+11,Delhi Public School,Tribal Area,Female,General,13,4,No,NA
+12,Kendriya Vidyalaya,Tier-1 City,Male,ST,7,3,No,NA
+13,Jawahar Navodaya Vidyalaya,Tier-2 City,Female,OBC,15,11,No,NA
+14,Delhi Public School,Tier-1 City,Male,EWS,17,7,No,NA
+15,St. Xavier’s,Tribal Area,Female,ST,7,8,Yes,Migration
+16,Government High School,Rural Village,Male,EWS,8,2,No,NA
+17,Delhi Public School,Tier-1 City,Male,EWS,8,3,No,NA
+18,St. Xavier’s,Rural Village,Male,OBC,15,5,No,NA
+19,Kendriya Vidyalaya,Metro City,Male,ST,6,5,No,NA
+20,Government High School,Metro City,Female,EWS,6,4,No,NA
+21,Kendriya Vidyalaya,Small Town,Male,ST,9,7,No,NA
+22,Government High School,Tier-2 City,Male,General,7,2,No,NA
+23,Government High School,Tribal Area,Female,ST,6,3,No,NA
+24,St. Xavier’s,Metro City,Female,ST,8,6,Yes,Health Problems
+25,Kendriya Vidyalaya,Metro City,Male,SC,17,11,Yes,Health Problems
+26,DAV Public School,Tier-2 City,Female,OBC,11,8,Yes,Lack of Interest
+27,DAV Public School,Tribal Area,Male,SC,11,6,No,NA
+28,Kendriya Vidyalaya,Small Town,Female,EWS,15,7,Yes,Health Problems
+29,Jawahar Navodaya Vidyalaya,Tier-1 City,Female,ST,12,6,No,NA
+30,Delhi Public School,Tier-1 City,Male,SC,9,8,No,NA
+31,Jawahar Navodaya Vidyalaya,Rural Village,Female,General,8,5,No,NA
+32,Jawahar Navodaya Vidyalaya,Small Town,Female,ST,12,7,No,NA
+33,DAV Public School,Rural Village,Female,ST,10,7,No,NA
+34,Delhi Public School,Tribal Area,Female,General,13,3,No,NA
+35,Kendriya Vidyalaya,Tier-1 City,Female,SC,10,5,No,NA
+36,DAV Public School,Tribal Area,Male,OBC,16,10,Yes,School Distance
+37,Government High School,Metro City,Male,OBC,13,9,Yes,Health Problems
+38,Government High School,Tribal Area,Male,EWS,16,1,No,NA
+39,DAV Public School,Tier-1 City,Female,EWS,12,1,Yes,School Distance
+40,Kendriya Vidyalaya,Tier-1 City,Female,SC,9,6,No,NA
+41,Kendriya Vidyalaya,Tier-1 City,Female,SC,8,8,No,NA
+42,Jawahar Navodaya Vidyalaya,Tier-1 City,Male,ST,9,5,Yes,Other
+43,St. Xavier’s,Tier-1 City,Male,EWS,9,11,No,NA
+44,St. Xavier’s,Tier-2 City,Male,SC,8,10,No,NA
+45,Government High School,Small Town,Male,ST,13,5,Yes,Early Marriage
+46,DAV Public School,Tier-2 City,Female,ST,17,6,No,NA
+47,DAV Public School,Tier-1 City,Male,SC,17,7,No,NA
+48,DAV Public School,Small Town,Male,ST,15,7,No,NA
+49,St. Xavier’s,Tier-1 City,Female,ST,12,7,No,NA
+50,Kendriya Vidyalaya,Metro City,Female,EWS,9,2,No,NA
+51,DAV Public School,Tier-2 City,Female,SC,11,8,No,NA
+52,Kendriya Vidyalaya,Rural Village,Male,SC,6,7,Yes,Early Marriage
+53,DAV Public School,Metro City,Female,ST,12,4,No,NA
+54,Jawahar Navodaya Vidyalaya,Tier-1 City,Male,EWS,7,8,Yes,NA
+55,DAV Public School,Tier-1 City,Male,EWS,9,10,No,NA
+56,St. Xavier’s,Small Town,Female,SC,17,1,Yes,Financial Issues
+57,Kendriya Vidyalaya,Small Town,Female,SC,7,6,No,NA
+58,St. Xavier’s,Tier-1 City,Male,ST,13,6,Yes,Health Problems
+59,Delhi Public School,Small Town,Male,OBC,11,11,No,NA
+60,Delhi Public School,Tier-2 City,Female,ST,17,3,No,NA
+61,DAV Public School,Metro City,Female,General,12,9,No,NA
+62,Jawahar Navodaya Vidyalaya,Tier-2 City,Female,EWS,6,3,No,NA
+63,Jawahar Navodaya Vidyalaya,Tribal Area,Male,General,8,1,No,NA
+64,St. Xavier’s,Tribal Area,Female,General,12,5,No,NA
+65,Kendriya Vidyalaya,Small Town,Male,General,12,3,Yes,Migration
+66,St. Xavier’s,Tier-2 City,Male,SC,13,5,Yes,NA
+67,St. Xavier’s,Tier-1 City,Female,ST,9,4,No,NA
+68,Kendriya Vidyalaya,Tier-1 City,Male,SC,15,5,No,NA
+69,Jawahar Navodaya Vidyalaya,Tier-1 City,Female,SC,11,7,No,NA
+70,St. Xavier’s,Tier-2 City,Female,OBC,10,11,No,NA
+71,Delhi Public School,Metro City,Female,General,17,5,No,NA
+72,St. Xavier’s,Tier-1 City,Female,ST,10,2,No,NA
+73,Government High School,Rural Village,Male,SC,16,5,Yes,Early Marriage
+74,St. Xavier’s,Small Town,Male,ST,6,4,No,NA
+75,Jawahar Navodaya Vidyalaya,Rural Village,Male,ST,15,2,No,NA
+76,Jawahar Navodaya Vidyalaya,Tier-2 City,Male,SC,11,11,Yes,Other
+77,Government High School,Small Town,Female,ST,14,10,No,NA
+78,Kendriya Vidyalaya,Metro City,Male,SC,10,10,Yes,Health Problems
+79,St. Xavier’s,Small Town,Male,OBC,15,4,Yes,Early Marriage
+80,DAV Public School,Tribal Area,Male,SC,14,5,Yes,Early Marriage
+81,Delhi Public School,Tribal Area,Female,OBC,7,1,No,NA
+82,Delhi Public School,Tier-2 City,Female,General,10,4,Yes,Lack of Interest
+83,St. Xavier’s,Tier-2 City,Male,EWS,13,5,No,NA
+84,St. Xavier’s,Tribal Area,Female,OBC,15,6,No,NA
+85,Kendriya Vidyalaya,Tribal Area,Female,OBC,17,4,Yes,Health Problems
+86,Government High School,Small Town,Male,SC,10,2,No,NA
+87,St. Xavier’s,Rural Village,Male,ST,9,3,Yes,Financial Issues
+88,DAV Public School,Metro City,Female,SC,9,7,No,NA
+89,St. Xavier’s,Metro City,Female,ST,11,7,No,NA
+90,Jawahar Navodaya Vidyalaya,Rural Village,Female,OBC,8,2,No,NA
+91,Delhi Public School,Rural Village,Female,General,14,2,No,NA
+92,Kendriya Vidyalaya,Tier-1 City,Male,ST,13,10,Yes,NA
+93,Kendriya Vidyalaya,Tier-1 City,Male,General,11,2,Yes,Other
+94,Government High School,Tier-2 City,Female,EWS,14,4,No,NA
+95,Kendriya Vidyalaya,Small Town,Female,ST,10,10,No,NA
+96,DAV Public School,Metro City,Male,SC,9,5,No,NA
+97,Delhi Public School,Tier-1 City,Female,SC,9,6,No,NA
+98,DAV Public School,Tier-1 City,Male,OBC,10,11,Yes,NA
+99,Jawahar Navodaya Vidyalaya,Small Town,Male,ST,11,4,No,NA
+100,DAV Public School,Metro City,Female,EWS,13,1,Yes,Early Marriage

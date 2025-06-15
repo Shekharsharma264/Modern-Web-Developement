@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+#nav{
+    background-color: rgb(56, 55, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#h4s{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
