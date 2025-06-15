@@ -48,7 +48,6 @@ names.forEach((name)=>{
         });
     });
 
-
     name.addEventListener("mouseleave",()=>{
         gsap.to(name.querySelector("img"),{
             opacity:0,
